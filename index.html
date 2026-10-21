@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>در حال انتقال...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Tahoma, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .link {
+            color: #fff;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+    </style>
+    <!-- ریدایرکت پس از 3 ثانیه -->
+    <meta http-equiv="refresh" content="3; url=https://kos-persian-app-download.lovable.app">
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <h1>در حال انتقال به سایت...</h1>
+        <p>لطفاً ۳ ثانیه صبر کنید</p>
+        <p>
+            اگر به‌طور خودکار منتقل نشدید،
+            <a class="link" href="https://kos-persian-app-download.lovable.app">اینجا کلیک کنید</a>
+        </p>
+    </div>
+
+    <script>
+        // ریدایرکت مطمئن با جاوااسکریپت پس از 3 ثانیه
+        setTimeout(function () {
+            window.location.href = "https://kos-persian-app-download.lovable.app";
+        }, 3000);
+    </script>
+</body>
+</html>
